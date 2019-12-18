@@ -68,7 +68,8 @@ public class Client {
     }
 
     void supprimerCompte(UUID id) {
-        // Suppression du compte d'id "id", on set le compte a null (le tableau ne change pas de longueur)
+        // On va recreer le tableau de comptes en enlevant le compte a supprimer. temp est le tableau temporaire ou on met
+        // au fur et a mesure les comptes.
         Compte compareObject = new Compte(id);
         Compte[] temp = new Compte[0];
 
