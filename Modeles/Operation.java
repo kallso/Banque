@@ -6,19 +6,15 @@ public class Operation {
     public double getDiff() {
         return diff;
     }
-
-    public void setDiff(double diff) {
-        this.diff = diff;
-    }
-
     public Date getDateModification() {
         return dateModification;
     }
 
-    public void setDateModification(Date dateModification) {
-        this.dateModification = dateModification;
-    }
-
     private double diff;
     private Date dateModification;
+
+    public Operation(double montant) {
+        this.diff = montant;
+        this.dateModification = new Date();
+    }
 }

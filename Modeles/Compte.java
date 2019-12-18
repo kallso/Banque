@@ -55,7 +55,7 @@ public class Compte {
         creation = new Date();
     }
 
-    void ajouterOp(Operation op) {
+    public void ajouterOp(Operation op) {
         if (operations == null) {
             // Creation du tableau d'opérations
             operations = new Operation[1];
