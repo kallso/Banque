@@ -1,4 +1,4 @@
-package fr.ipst.Banque.Controller;
+package Banque.Controller;
 
 public class Controller {
 }

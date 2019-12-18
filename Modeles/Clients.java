@@ -1,4 +1,4 @@
-package Modeles;
+package Banque.Modeles;
 
 import java.util.Arrays;
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package fr.ipst.Banque.Actions;
+package Banque.Actions;
 
 public class ActionOperation {
 }

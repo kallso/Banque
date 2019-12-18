@@ -1,8 +1,8 @@
-package fr.ipst.Banque.Actions;
+package Banque.Actions;
 
-import Modeles.Client;
-import Modeles.Clients;
-import Modeles.Compte;
+import Banque.Modeles.Client;
+import Banque.Modeles.Clients;
+import Banque.Modeles.Compte;
 
 import java.util.UUID;
 
