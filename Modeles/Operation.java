@@ -17,4 +17,12 @@ public class Operation {
         this.diff = montant;
         this.dateModification = new Date();
     }
+
+    @Override
+    public String toString() {
+        String signe = diff >= 0 ? "+" : "";
+
+        return "Operation " + signe + diff +
+                "€ le " + dateModification;
+    }
 }

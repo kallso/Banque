@@ -38,12 +38,22 @@ public class Compte {
         this.operations = operations;
     }
 
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
     private UUID id;
+    private String nom;
     private Date creation;
     private double solde;
     private Operation[] operations = null;
 
-    public Compte(double solde) {
+    public Compte(double solde, String nom) {
+        this.nom = nom;
         this.solde = solde;
         id = UUID.randomUUID();
         creation = new Date();
@@ -64,6 +74,8 @@ public class Compte {
             operations = Arrays.copyOf(operations, operations.length + 1);
             operations[operations.length - 1] = op;
         }
+
+        this.solde += op.getDiff();
     }
 
     @Override
@@ -77,5 +89,13 @@ public class Compte {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    @Override
+    public String toString() {
+        return "Le compte " + nom +
+                " créé le " + creation +
+                " a un solde de : " + solde +
+                "€.";
     }
 }

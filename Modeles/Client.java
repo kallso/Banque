@@ -56,7 +56,7 @@ public class Client {
         return null;
     }
 
-    void ajouterCompte(Compte compte) {
+    public void ajouterCompte(Compte compte) {
         if (comptes == null) {
             // Creation du tableau de comptes
             comptes = new Compte[1];
@@ -67,7 +67,7 @@ public class Client {
         }
     }
 
-    void supprimerCompte(UUID id) {
+    public void supprimerCompte(UUID id) {
         // On va recreer le tableau de comptes en enlevant le compte a supprimer. temp est le tableau temporaire ou on met
         // au fur et a mesure les comptes.
         Compte compareObject = new Compte(id);
